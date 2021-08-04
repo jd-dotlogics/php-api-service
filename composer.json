@@ -1,0 +1,22 @@
+{
+    "name": "jawad-topdot/php-api-service",
+    "description": "",
+    "type": "library",
+    "require": {
+        "php": "^7.3|^8.0",
+        "guzzlehttp/guzzle": "^7.3",
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Jawad",
+            "email": "jawad.topdot@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Topdot\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
