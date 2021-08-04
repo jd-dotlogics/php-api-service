@@ -1,10 +1,10 @@
 {
     "name": "jawad-topdot/php-api-service",
-    "description": "",
+    "description": "A helper class for sending HTTP requiest by using GuzzleHttp",
     "type": "library",
     "require": {
         "php": "^7.3|^8.0",
-        "guzzlehttp/guzzle": "^7.3",
+        "guzzlehttp/guzzle": "^7.3"
     },
     "license": "MIT",
     "authors": [
