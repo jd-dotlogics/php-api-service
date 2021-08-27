@@ -1,6 +1,6 @@
 <?php
 
-namespace Topdot;
+namespace Dotlogics;
 
 use GuzzleHttp\Client;
 

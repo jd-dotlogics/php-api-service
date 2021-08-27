@@ -1,5 +1,5 @@
 {
-    "name": "jawad-topdot/php-api-service",
+    "name": "jd-dotlogics/php-api-service",
     "description": "A helper class for sending HTTP requiest by using GuzzleHttp",
     "type": "library",
     "require": {
@@ -9,13 +9,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Muhammad Jawad",
-            "email": "jawad.topdot@gmail.com"
+            "name": "Dotlogics",
+            "email": "hello@dotlogics.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Topdot\\": "src"
+            "Dotlogics\\": "src"
         }
     },
     "minimum-stability": "dev"
