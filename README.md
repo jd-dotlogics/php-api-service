@@ -1,3 +1,3 @@
 # Installation
 
->`composer require jawad-topdot/php-api-service`
+>`composer require jd-dotlogics/php-api-service`
