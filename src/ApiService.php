@@ -47,10 +47,10 @@ class ApiService
      * @param array $data
      * @param array $headers
      */
-    protected function preCallHook($method, $endpoint, $query, &$data, &$headers)
-    {
-        # update request data
-    }
+    // protected function preCallHook($method, $endpoint, &$query, &$data, &$headers)
+    // {
+    //     # update request data
+    // }
 
     /**
      * Get HTTP client
@@ -88,7 +88,9 @@ class ApiService
     
         $client = $this->getHttpClient();
         try {
-            $this->preCallHook($method, $endpoint, $query, $data, $headers);
+            if(method_exists($this, 'preCallHook')){
+                $this->preCallHook($method, $endpoint, $query, $data, $headers);
+            }
 
             $req_options = [
                 'query' => $query,                
