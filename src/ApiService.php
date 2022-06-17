@@ -99,7 +99,16 @@ class ApiService
             ];
 
             if(strtolower($method) != 'get'){
-                $req_options['json'] = $data;
+                $content_type = array_filter($headers, function($key){
+                    return strtolower($key) === 'content-type';
+                }, ARRAY_FILTER_USE_KEY);
+                $content_type = strtolower(current($content_type) ?: '');
+                
+                if(empty($content_type) || strpos($content_type, 'json') !== false){
+                    $req_options['json'] = $data;
+                }else{
+                    $req_options['body'] = $data;
+                }
             }
 
             // dd($method, $endpoint, $req_options);
